@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <header><h1>Registration Form</h1></header>
+
+    <form action="7_Registrationform.html" method="post">
+      <fieldset>
+          <legend>Pesonal Info</legend>
+        <label for="name">Name:<input type="username" name="username" required pattern="[A-Z][a-z]+\s[A-Z][a-z]+"></label>
+
+        <br><input type="radio" name="membership" value="member" checked> Member
+        <input type="radio" name="membership" value="nomember"> No-Member<br>
+
+        Email:<input type="email" name="email">
+
+      </fieldset>
+      <fieldset>
+        <legend>Pesonal Info</legend>
+        <label for="engine">Facility:</label> 
+          <select id="referral" name="referral">
+            <option value="0">Badminton</option>
+            <option value="squash">Squash</option>
+            <option value="racquetball">Racquetball</option>
+          </select><br>
+
+          <label for="reservation">Select a reservation date and time: </label><input type="datetime-local">
+            <br><input type="checkbox" name="terms" value="accept">I agree to the club's reservation policy <br>
+      </fieldset>
+      <input type="submit" id="submit" value="Submit">
+    </form>
+        
+</body>
+</html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Registration Form</h1>
+
+    <form action="https://www.webucator.com/materials/htm101/" method="post">
+        User name:<input type="username" name="username">
+        <br>
+        Password:<input type="pw" name="pw">   
+        <input type="hidden" name="emailMe" id="emailMe" value="40240227@esmad.ipp.pt">
+
+    
+        <br>Gender:<input type="radio" name="gender" value="male" checked> Male
+        <input type="radio" name="gender" value="female"> Female<br>
+        Click to accept our terms<input type="checkbox" name="terms" value="accept"><br>
+
+        <label for="engine">Where did you hear about us:</label> 
+          <select id="referral" name="referral">
+            <option value="0">-Please-choose-</option>
+            <option value="wom">Word of Mouth</option>
+            <optgroup label="Search Engine">
+                <option value="Google">Google</option>
+                <option value="Yahoo">Yahoo!</option>
+                <option value="MSN">MSN</option>
+            </optgroup>
+          </select>
+     
+            <br><label for="comments">Comentários:</label><br>
+            <textarea id="comments" name="comments" rows="4" cols="50"></textarea>
+            <br><input type="button" onclick="" value="Register">
+            <input type="button" onclick="" value="Reset">
+    </form>
+        
+</body>
+</html>
